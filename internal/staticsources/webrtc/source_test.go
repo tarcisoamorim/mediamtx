@@ -12,10 +12,10 @@ import (
 	pwebrtc "github.com/pion/webrtc/v4"
 	"github.com/stretchr/testify/require"
 
-	"github.com/bluenviron/mediamtx/internal/conf"
-	"github.com/bluenviron/mediamtx/internal/defs"
-	"github.com/bluenviron/mediamtx/internal/protocols/webrtc"
-	"github.com/bluenviron/mediamtx/internal/test"
+	"github.com/tarcisoamorim/mediamtx/internal/conf"
+	"github.com/tarcisoamorim/mediamtx/internal/defs"
+	"github.com/tarcisoamorim/mediamtx/internal/protocols/webrtc"
+	"github.com/tarcisoamorim/mediamtx/internal/test"
 )
 
 func whipOffer(body []byte) *pwebrtc.SessionDescription {

@@ -3,7 +3,7 @@ package message
 import (
 	"fmt"
 
-	"github.com/bluenviron/mediamtx/internal/protocols/rtmp/rawmessage"
+	"github.com/tarcisoamorim/mediamtx/internal/protocols/rtmp/rawmessage"
 )
 
 // VideoExSequenceEnd is a sequence end extended message.

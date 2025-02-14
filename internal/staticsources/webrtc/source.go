@@ -9,13 +9,13 @@ import (
 
 	"github.com/bluenviron/gortsplib/v4/pkg/description"
 
-	"github.com/bluenviron/mediamtx/internal/conf"
-	"github.com/bluenviron/mediamtx/internal/defs"
-	"github.com/bluenviron/mediamtx/internal/logger"
-	"github.com/bluenviron/mediamtx/internal/protocols/tls"
-	"github.com/bluenviron/mediamtx/internal/protocols/webrtc"
-	"github.com/bluenviron/mediamtx/internal/protocols/whip"
-	"github.com/bluenviron/mediamtx/internal/stream"
+	"github.com/tarcisoamorim/mediamtx/internal/conf"
+	"github.com/tarcisoamorim/mediamtx/internal/defs"
+	"github.com/tarcisoamorim/mediamtx/internal/logger"
+	"github.com/tarcisoamorim/mediamtx/internal/protocols/tls"
+	"github.com/tarcisoamorim/mediamtx/internal/protocols/webrtc"
+	"github.com/tarcisoamorim/mediamtx/internal/protocols/whip"
+	"github.com/tarcisoamorim/mediamtx/internal/stream"
 )
 
 // Source is a WebRTC static source.

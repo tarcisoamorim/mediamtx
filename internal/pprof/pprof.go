@@ -9,11 +9,11 @@ import (
 	"github.com/gin-contrib/pprof"
 	"github.com/gin-gonic/gin"
 
-	"github.com/bluenviron/mediamtx/internal/auth"
-	"github.com/bluenviron/mediamtx/internal/conf"
-	"github.com/bluenviron/mediamtx/internal/logger"
-	"github.com/bluenviron/mediamtx/internal/protocols/httpp"
-	"github.com/bluenviron/mediamtx/internal/restrictnetwork"
+	"github.com/tarcisoamorim/mediamtx/internal/auth"
+	"github.com/tarcisoamorim/mediamtx/internal/conf"
+	"github.com/tarcisoamorim/mediamtx/internal/logger"
+	"github.com/tarcisoamorim/mediamtx/internal/protocols/httpp"
+	"github.com/tarcisoamorim/mediamtx/internal/restrictnetwork"
 )
 
 type pprofAuthManager interface {

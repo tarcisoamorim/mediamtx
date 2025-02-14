@@ -9,9 +9,9 @@ import (
 	"strings"
 	"time"
 
-	"github.com/bluenviron/mediamtx/internal/conf"
-	"github.com/bluenviron/mediamtx/internal/logger"
-	"github.com/bluenviron/mediamtx/internal/recordstore"
+	"github.com/tarcisoamorim/mediamtx/internal/conf"
+	"github.com/tarcisoamorim/mediamtx/internal/logger"
+	"github.com/tarcisoamorim/mediamtx/internal/recordstore"
 )
 
 var timeNow = time.Now

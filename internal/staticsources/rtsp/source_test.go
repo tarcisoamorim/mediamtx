@@ -13,9 +13,9 @@ import (
 	"github.com/pion/rtp"
 	"github.com/stretchr/testify/require"
 
-	"github.com/bluenviron/mediamtx/internal/conf"
-	"github.com/bluenviron/mediamtx/internal/defs"
-	"github.com/bluenviron/mediamtx/internal/test"
+	"github.com/tarcisoamorim/mediamtx/internal/conf"
+	"github.com/tarcisoamorim/mediamtx/internal/defs"
+	"github.com/tarcisoamorim/mediamtx/internal/test"
 )
 
 type testServer struct {

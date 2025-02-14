@@ -16,13 +16,13 @@ import (
 	"github.com/pion/sdp/v3"
 	pwebrtc "github.com/pion/webrtc/v4"
 
-	"github.com/bluenviron/mediamtx/internal/auth"
-	"github.com/bluenviron/mediamtx/internal/defs"
-	"github.com/bluenviron/mediamtx/internal/externalcmd"
-	"github.com/bluenviron/mediamtx/internal/hooks"
-	"github.com/bluenviron/mediamtx/internal/logger"
-	"github.com/bluenviron/mediamtx/internal/protocols/webrtc"
-	"github.com/bluenviron/mediamtx/internal/stream"
+	"github.com/tarcisoamorim/mediamtx/internal/auth"
+	"github.com/tarcisoamorim/mediamtx/internal/defs"
+	"github.com/tarcisoamorim/mediamtx/internal/externalcmd"
+	"github.com/tarcisoamorim/mediamtx/internal/hooks"
+	"github.com/tarcisoamorim/mediamtx/internal/logger"
+	"github.com/tarcisoamorim/mediamtx/internal/protocols/webrtc"
+	"github.com/tarcisoamorim/mediamtx/internal/stream"
 )
 
 func whipOffer(body []byte) *pwebrtc.SessionDescription {

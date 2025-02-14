@@ -8,8 +8,8 @@ import (
 
 	"github.com/asticode/go-astits"
 	"github.com/bluenviron/mediacommon/pkg/formats/mpegts"
-	"github.com/bluenviron/mediamtx/internal/logger"
-	"github.com/bluenviron/mediamtx/internal/test"
+	"github.com/tarcisoamorim/mediamtx/internal/logger"
+	"github.com/tarcisoamorim/mediamtx/internal/test"
 	"github.com/stretchr/testify/require"
 )
 

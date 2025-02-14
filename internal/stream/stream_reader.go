@@ -4,7 +4,7 @@ import (
 	"fmt"
 
 	"github.com/bluenviron/gortsplib/v4/pkg/ringbuffer"
-	"github.com/bluenviron/mediamtx/internal/logger"
+	"github.com/tarcisoamorim/mediamtx/internal/logger"
 )
 
 type streamReader struct {

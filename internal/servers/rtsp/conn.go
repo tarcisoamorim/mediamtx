@@ -11,12 +11,12 @@ import (
 	"github.com/bluenviron/gortsplib/v4/pkg/base"
 	"github.com/google/uuid"
 
-	"github.com/bluenviron/mediamtx/internal/auth"
-	"github.com/bluenviron/mediamtx/internal/conf"
-	"github.com/bluenviron/mediamtx/internal/defs"
-	"github.com/bluenviron/mediamtx/internal/externalcmd"
-	"github.com/bluenviron/mediamtx/internal/hooks"
-	"github.com/bluenviron/mediamtx/internal/logger"
+	"github.com/tarcisoamorim/mediamtx/internal/auth"
+	"github.com/tarcisoamorim/mediamtx/internal/conf"
+	"github.com/tarcisoamorim/mediamtx/internal/defs"
+	"github.com/tarcisoamorim/mediamtx/internal/externalcmd"
+	"github.com/tarcisoamorim/mediamtx/internal/hooks"
+	"github.com/tarcisoamorim/mediamtx/internal/logger"
 )
 
 const (

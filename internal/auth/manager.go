@@ -16,7 +16,7 @@ import (
 	"github.com/MicahParks/keyfunc/v3"
 	"github.com/bluenviron/gortsplib/v4/pkg/auth"
 	"github.com/bluenviron/gortsplib/v4/pkg/headers"
-	"github.com/bluenviron/mediamtx/internal/conf"
+	"github.com/tarcisoamorim/mediamtx/internal/conf"
 	"github.com/golang-jwt/jwt/v5"
 	"github.com/google/uuid"
 )

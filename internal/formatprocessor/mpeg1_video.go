@@ -9,7 +9,7 @@ import (
 	"github.com/bluenviron/gortsplib/v4/pkg/format/rtpmpeg1video"
 	"github.com/pion/rtp"
 
-	"github.com/bluenviron/mediamtx/internal/unit"
+	"github.com/tarcisoamorim/mediamtx/internal/unit"
 )
 
 // MPEG-1 video related parameters

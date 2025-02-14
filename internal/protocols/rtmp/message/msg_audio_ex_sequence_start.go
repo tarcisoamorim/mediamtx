@@ -4,7 +4,7 @@ import (
 	"fmt"
 
 	"github.com/bluenviron/mediacommon/pkg/codecs/mpeg4audio"
-	"github.com/bluenviron/mediamtx/internal/protocols/rtmp/rawmessage"
+	"github.com/tarcisoamorim/mediamtx/internal/protocols/rtmp/rawmessage"
 )
 
 // AudioExSequenceStart is a sequence start extended message.

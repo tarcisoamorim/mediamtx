@@ -3,9 +3,9 @@ package hooks
 import (
 	"net"
 
-	"github.com/bluenviron/mediamtx/internal/defs"
-	"github.com/bluenviron/mediamtx/internal/externalcmd"
-	"github.com/bluenviron/mediamtx/internal/logger"
+	"github.com/tarcisoamorim/mediamtx/internal/defs"
+	"github.com/tarcisoamorim/mediamtx/internal/externalcmd"
+	"github.com/tarcisoamorim/mediamtx/internal/logger"
 )
 
 // OnConnectParams are the parameters of OnConnect.

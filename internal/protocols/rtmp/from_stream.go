@@ -10,9 +10,9 @@ import (
 	"github.com/bluenviron/mediacommon/pkg/codecs/h264"
 	"github.com/bluenviron/mediacommon/pkg/codecs/mpeg1audio"
 	"github.com/bluenviron/mediacommon/pkg/codecs/mpeg4audio"
-	"github.com/bluenviron/mediamtx/internal/logger"
-	"github.com/bluenviron/mediamtx/internal/stream"
-	"github.com/bluenviron/mediamtx/internal/unit"
+	"github.com/tarcisoamorim/mediamtx/internal/logger"
+	"github.com/tarcisoamorim/mediamtx/internal/stream"
+	"github.com/tarcisoamorim/mediamtx/internal/unit"
 )
 
 var errNoSupportedCodecsFrom = errors.New(

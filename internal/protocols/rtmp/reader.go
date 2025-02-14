@@ -14,8 +14,8 @@ import (
 	"github.com/bluenviron/mediacommon/pkg/codecs/h265"
 	"github.com/bluenviron/mediacommon/pkg/codecs/mpeg4audio"
 
-	"github.com/bluenviron/mediamtx/internal/protocols/rtmp/h264conf"
-	"github.com/bluenviron/mediamtx/internal/protocols/rtmp/message"
+	"github.com/tarcisoamorim/mediamtx/internal/protocols/rtmp/h264conf"
+	"github.com/tarcisoamorim/mediamtx/internal/protocols/rtmp/message"
 )
 
 const (

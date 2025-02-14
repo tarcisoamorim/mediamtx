@@ -4,7 +4,7 @@ import (
 	"encoding/json"
 	"fmt"
 
-	"github.com/bluenviron/mediamtx/internal/logger"
+	"github.com/tarcisoamorim/mediamtx/internal/logger"
 )
 
 // LogLevel is the logLevel parameter.

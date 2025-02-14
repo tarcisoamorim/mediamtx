@@ -7,11 +7,11 @@ import (
 
 	"github.com/bluenviron/gortsplib/v4/pkg/description"
 	"github.com/bluenviron/gortsplib/v4/pkg/format"
-	"github.com/bluenviron/mediamtx/internal/logger"
-	"github.com/bluenviron/mediamtx/internal/protocols/rtmp/bytecounter"
-	"github.com/bluenviron/mediamtx/internal/protocols/rtmp/message"
-	"github.com/bluenviron/mediamtx/internal/stream"
-	"github.com/bluenviron/mediamtx/internal/test"
+	"github.com/tarcisoamorim/mediamtx/internal/logger"
+	"github.com/tarcisoamorim/mediamtx/internal/protocols/rtmp/bytecounter"
+	"github.com/tarcisoamorim/mediamtx/internal/protocols/rtmp/message"
+	"github.com/tarcisoamorim/mediamtx/internal/stream"
+	"github.com/tarcisoamorim/mediamtx/internal/test"
 	"github.com/stretchr/testify/require"
 )
 

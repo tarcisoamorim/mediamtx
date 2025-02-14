@@ -7,10 +7,10 @@ import (
 	"net/url"
 	"strings"
 
-	"github.com/bluenviron/mediamtx/internal/protocols/rtmp/amf0"
-	"github.com/bluenviron/mediamtx/internal/protocols/rtmp/bytecounter"
-	"github.com/bluenviron/mediamtx/internal/protocols/rtmp/handshake"
-	"github.com/bluenviron/mediamtx/internal/protocols/rtmp/message"
+	"github.com/tarcisoamorim/mediamtx/internal/protocols/rtmp/amf0"
+	"github.com/tarcisoamorim/mediamtx/internal/protocols/rtmp/bytecounter"
+	"github.com/tarcisoamorim/mediamtx/internal/protocols/rtmp/handshake"
+	"github.com/tarcisoamorim/mediamtx/internal/protocols/rtmp/message"
 )
 
 func resultIsOK1(res *message.CommandAMF0) bool {

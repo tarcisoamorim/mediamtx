@@ -5,9 +5,9 @@ import (
 
 	"github.com/bluenviron/gortsplib/v4/pkg/description"
 
-	"github.com/bluenviron/mediamtx/internal/conf"
-	"github.com/bluenviron/mediamtx/internal/externalcmd"
-	"github.com/bluenviron/mediamtx/internal/stream"
+	"github.com/tarcisoamorim/mediamtx/internal/conf"
+	"github.com/tarcisoamorim/mediamtx/internal/externalcmd"
+	"github.com/tarcisoamorim/mediamtx/internal/stream"
 )
 
 // PathNoOnePublishingError is returned when no one is publishing.

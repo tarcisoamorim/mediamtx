@@ -8,11 +8,11 @@ import (
 	mcmpegts "github.com/bluenviron/mediacommon/pkg/formats/mpegts"
 	srt "github.com/datarhei/gosrt"
 
-	"github.com/bluenviron/mediamtx/internal/conf"
-	"github.com/bluenviron/mediamtx/internal/defs"
-	"github.com/bluenviron/mediamtx/internal/logger"
-	"github.com/bluenviron/mediamtx/internal/protocols/mpegts"
-	"github.com/bluenviron/mediamtx/internal/stream"
+	"github.com/tarcisoamorim/mediamtx/internal/conf"
+	"github.com/tarcisoamorim/mediamtx/internal/defs"
+	"github.com/tarcisoamorim/mediamtx/internal/logger"
+	"github.com/tarcisoamorim/mediamtx/internal/protocols/mpegts"
+	"github.com/tarcisoamorim/mediamtx/internal/stream"
 )
 
 // Source is a SRT static source.

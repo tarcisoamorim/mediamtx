@@ -7,8 +7,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/bluenviron/mediamtx/internal/conf"
-	"github.com/bluenviron/mediamtx/internal/test"
+	"github.com/tarcisoamorim/mediamtx/internal/conf"
+	"github.com/tarcisoamorim/mediamtx/internal/test"
 	"github.com/stretchr/testify/require"
 )
 

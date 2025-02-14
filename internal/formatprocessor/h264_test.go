@@ -10,7 +10,7 @@ import (
 	"github.com/pion/rtp"
 	"github.com/stretchr/testify/require"
 
-	"github.com/bluenviron/mediamtx/internal/unit"
+	"github.com/tarcisoamorim/mediamtx/internal/unit"
 )
 
 func TestH264DynamicParams(t *testing.T) {

@@ -7,8 +7,8 @@ import (
 	"github.com/bluenviron/gohlslib/v2/pkg/codecs"
 	"github.com/bluenviron/gortsplib/v4/pkg/description"
 	"github.com/bluenviron/gortsplib/v4/pkg/format"
-	"github.com/bluenviron/mediamtx/internal/stream"
-	"github.com/bluenviron/mediamtx/internal/unit"
+	"github.com/tarcisoamorim/mediamtx/internal/stream"
+	"github.com/tarcisoamorim/mediamtx/internal/unit"
 )
 
 func multiplyAndDivide(v, m, d int64) int64 {

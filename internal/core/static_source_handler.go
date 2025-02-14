@@ -7,16 +7,16 @@ import (
 	"strings"
 	"time"
 
-	"github.com/bluenviron/mediamtx/internal/conf"
-	"github.com/bluenviron/mediamtx/internal/defs"
-	"github.com/bluenviron/mediamtx/internal/logger"
-	hlssource "github.com/bluenviron/mediamtx/internal/staticsources/hls"
-	rpicamerasource "github.com/bluenviron/mediamtx/internal/staticsources/rpicamera"
-	rtmpsource "github.com/bluenviron/mediamtx/internal/staticsources/rtmp"
-	rtspsource "github.com/bluenviron/mediamtx/internal/staticsources/rtsp"
-	srtsource "github.com/bluenviron/mediamtx/internal/staticsources/srt"
-	udpsource "github.com/bluenviron/mediamtx/internal/staticsources/udp"
-	webrtcsource "github.com/bluenviron/mediamtx/internal/staticsources/webrtc"
+	"github.com/tarcisoamorim/mediamtx/internal/conf"
+	"github.com/tarcisoamorim/mediamtx/internal/defs"
+	"github.com/tarcisoamorim/mediamtx/internal/logger"
+	hlssource "github.com/tarcisoamorim/mediamtx/internal/staticsources/hls"
+	rpicamerasource "github.com/tarcisoamorim/mediamtx/internal/staticsources/rpicamera"
+	rtmpsource "github.com/tarcisoamorim/mediamtx/internal/staticsources/rtmp"
+	rtspsource "github.com/tarcisoamorim/mediamtx/internal/staticsources/rtsp"
+	srtsource "github.com/tarcisoamorim/mediamtx/internal/staticsources/srt"
+	udpsource "github.com/tarcisoamorim/mediamtx/internal/staticsources/udp"
+	webrtcsource "github.com/tarcisoamorim/mediamtx/internal/staticsources/webrtc"
 )
 
 const (

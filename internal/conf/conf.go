@@ -17,10 +17,10 @@ import (
 	"github.com/bluenviron/gortsplib/v4"
 	"github.com/bluenviron/gortsplib/v4/pkg/auth"
 
-	"github.com/bluenviron/mediamtx/internal/conf/decrypt"
-	"github.com/bluenviron/mediamtx/internal/conf/env"
-	"github.com/bluenviron/mediamtx/internal/conf/yaml"
-	"github.com/bluenviron/mediamtx/internal/logger"
+	"github.com/tarcisoamorim/mediamtx/internal/conf/decrypt"
+	"github.com/tarcisoamorim/mediamtx/internal/conf/env"
+	"github.com/tarcisoamorim/mediamtx/internal/conf/yaml"
+	"github.com/tarcisoamorim/mediamtx/internal/logger"
 )
 
 // ErrPathNotFound is returned when a path is not found.

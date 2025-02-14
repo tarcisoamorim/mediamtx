@@ -6,11 +6,11 @@ import (
 	"time"
 
 	"github.com/bluenviron/gohlslib/v2"
-	"github.com/bluenviron/mediamtx/internal/conf"
-	"github.com/bluenviron/mediamtx/internal/defs"
-	"github.com/bluenviron/mediamtx/internal/logger"
-	"github.com/bluenviron/mediamtx/internal/protocols/hls"
-	"github.com/bluenviron/mediamtx/internal/stream"
+	"github.com/tarcisoamorim/mediamtx/internal/conf"
+	"github.com/tarcisoamorim/mediamtx/internal/defs"
+	"github.com/tarcisoamorim/mediamtx/internal/logger"
+	"github.com/tarcisoamorim/mediamtx/internal/protocols/hls"
+	"github.com/tarcisoamorim/mediamtx/internal/stream"
 	"github.com/gin-gonic/gin"
 )
 

@@ -8,8 +8,8 @@ import (
 
 	"github.com/bluenviron/gortsplib/v4/pkg/base"
 	"github.com/bluenviron/gortsplib/v4/pkg/headers"
-	"github.com/bluenviron/mediamtx/internal/auth"
-	"github.com/bluenviron/mediamtx/internal/conf"
+	"github.com/tarcisoamorim/mediamtx/internal/auth"
+	"github.com/tarcisoamorim/mediamtx/internal/conf"
 	"github.com/google/uuid"
 )
 

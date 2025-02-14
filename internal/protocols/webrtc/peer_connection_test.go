@@ -5,8 +5,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/bluenviron/mediamtx/internal/conf"
-	"github.com/bluenviron/mediamtx/internal/test"
+	"github.com/tarcisoamorim/mediamtx/internal/conf"
+	"github.com/tarcisoamorim/mediamtx/internal/test"
 	"github.com/pion/sdp/v3"
 	"github.com/pion/webrtc/v4"
 	"github.com/stretchr/testify/require"

@@ -6,9 +6,9 @@ import (
 
 	"github.com/bluenviron/mediacommon/pkg/formats/fmp4"
 
-	"github.com/bluenviron/mediamtx/internal/conf"
-	"github.com/bluenviron/mediamtx/internal/logger"
-	"github.com/bluenviron/mediamtx/internal/recordstore"
+	"github.com/tarcisoamorim/mediamtx/internal/conf"
+	"github.com/tarcisoamorim/mediamtx/internal/logger"
+	"github.com/tarcisoamorim/mediamtx/internal/recordstore"
 )
 
 type sample struct {
