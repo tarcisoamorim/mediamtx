@@ -1,7 +1,49 @@
+# Arquivos temporários e binários
 /tmp
 /binaries
 /coverage*.txt
+
+# Documentação gerada
 /apidocs/*.html
+
+# Arquivos de versão e build
 /internal/core/VERSION
 /internal/servers/hls/hls.min.js
 /internal/staticsources/rpicamera/mtxrpicam_*
+
+# Arquivos de configuração local
+*.env
+*.local
+mediamtx.local.yml
+
+# Logs
+*.log
+logs/
+
+# Arquivos de sistema
+.DS_Store
+Thumbs.db
+
+# Diretórios de dependências e build
+/node_modules/
+/dist/
+/build/
+
+# Arquivos de certificados e chaves
+*.pem
+*.key
+*.crt
+*.cert
+
+# Arquivos de mídia
+*.mp4
+*.ts
+*.m3u8
+/recordings/
+
+# IDEs e editores
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
