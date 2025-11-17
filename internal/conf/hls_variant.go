@@ -5,7 +5,7 @@ import (
 	"fmt"
 
 	"github.com/bluenviron/gohlslib/v2"
-	"github.com/bluenviron/mediamtx/internal/conf/jsonwrapper"
+	"github.com/tarcisoamorim/peep-mediaserver/internal/conf/jsonwrapper"
 )
 
 // HLSVariant is the hlsVariant parameter.

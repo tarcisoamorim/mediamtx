@@ -7,7 +7,7 @@ import (
 	"sort"
 	"strings"
 
-	"github.com/bluenviron/mediamtx/internal/conf/jsonwrapper"
+	"github.com/tarcisoamorim/peep-mediaserver/internal/conf/jsonwrapper"
 )
 
 // IPNetworks is a parameter that contains a list of IP networks.

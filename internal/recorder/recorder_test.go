@@ -15,12 +15,12 @@ import (
 	"github.com/bluenviron/mediacommon/v2/pkg/formats/mp4"
 	"github.com/stretchr/testify/require"
 
-	"github.com/bluenviron/mediamtx/internal/conf"
-	"github.com/bluenviron/mediamtx/internal/logger"
-	"github.com/bluenviron/mediamtx/internal/recordstore"
-	"github.com/bluenviron/mediamtx/internal/stream"
-	"github.com/bluenviron/mediamtx/internal/test"
-	"github.com/bluenviron/mediamtx/internal/unit"
+	"github.com/tarcisoamorim/peep-mediaserver/internal/conf"
+	"github.com/tarcisoamorim/peep-mediaserver/internal/logger"
+	"github.com/tarcisoamorim/peep-mediaserver/internal/recordstore"
+	"github.com/tarcisoamorim/peep-mediaserver/internal/stream"
+	"github.com/tarcisoamorim/peep-mediaserver/internal/test"
+	"github.com/tarcisoamorim/peep-mediaserver/internal/unit"
 )
 
 func TestRecorder(t *testing.T) {

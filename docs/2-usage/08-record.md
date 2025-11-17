@@ -51,7 +51,7 @@ All available recording parameters are listed in the [configuration file](/docs/
 
 ## Remote upload
 
-To upload recordings to a remote location, you can use _MediaMTX_ together with [rclone](https://github.com/rclone/rclone), a command line tool that provides file synchronization capabilities with a huge variety of services (including S3, FTP, SMB, Google Drive):
+To upload recordings to a remote location, you can use _Peep-MediaServer_ together with [rclone](https://github.com/rclone/rclone), a command line tool that provides file synchronization capabilities with a huge variety of services (including S3, FTP, SMB, Google Drive):
 
 1. Download and install [rclone](https://github.com/rclone/rclone).
 

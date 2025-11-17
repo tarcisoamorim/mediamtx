@@ -22,9 +22,9 @@ import (
 	pwebrtc "github.com/pion/webrtc/v4"
 	"github.com/stretchr/testify/require"
 
-	"github.com/bluenviron/mediamtx/internal/protocols/webrtc"
-	"github.com/bluenviron/mediamtx/internal/protocols/whip"
-	"github.com/bluenviron/mediamtx/internal/test"
+	"github.com/tarcisoamorim/peep-mediaserver/internal/protocols/webrtc"
+	"github.com/tarcisoamorim/peep-mediaserver/internal/protocols/whip"
+	"github.com/tarcisoamorim/peep-mediaserver/internal/test"
 )
 
 func httpPullFile(t *testing.T, hc *http.Client, u string) []byte {

@@ -1,6 +1,6 @@
 package test
 
-import "github.com/bluenviron/mediamtx/internal/logger"
+import "github.com/tarcisoamorim/peep-mediaserver/internal/logger"
 
 type nilLogger struct{}
 

@@ -7,10 +7,10 @@ import (
 	"github.com/bluenviron/mediacommon/v2/pkg/formats/fmp4"
 	"github.com/google/uuid"
 
-	"github.com/bluenviron/mediamtx/internal/conf"
-	"github.com/bluenviron/mediamtx/internal/logger"
-	"github.com/bluenviron/mediamtx/internal/recordstore"
-	"github.com/bluenviron/mediamtx/internal/stream"
+	"github.com/tarcisoamorim/peep-mediaserver/internal/conf"
+	"github.com/tarcisoamorim/peep-mediaserver/internal/logger"
+	"github.com/tarcisoamorim/peep-mediaserver/internal/recordstore"
+	"github.com/tarcisoamorim/peep-mediaserver/internal/stream"
 )
 
 type sample struct {

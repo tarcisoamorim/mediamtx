@@ -24,9 +24,9 @@ import (
 	"github.com/pion/rtp"
 	"github.com/stretchr/testify/require"
 
-	"github.com/bluenviron/mediamtx/internal/defs"
-	"github.com/bluenviron/mediamtx/internal/protocols/whip"
-	"github.com/bluenviron/mediamtx/internal/test"
+	"github.com/tarcisoamorim/peep-mediaserver/internal/defs"
+	"github.com/tarcisoamorim/peep-mediaserver/internal/protocols/whip"
+	"github.com/tarcisoamorim/peep-mediaserver/internal/test"
 )
 
 type testServer struct {

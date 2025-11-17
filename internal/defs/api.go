@@ -5,7 +5,7 @@ import (
 
 	"github.com/google/uuid"
 
-	"github.com/bluenviron/mediamtx/internal/conf"
+	"github.com/tarcisoamorim/peep-mediaserver/internal/conf"
 )
 
 // APIPathManager contains methods used by the API and Metrics server.

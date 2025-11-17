@@ -13,15 +13,15 @@ import (
 	srt "github.com/datarhei/gosrt"
 	"github.com/google/uuid"
 
-	"github.com/bluenviron/mediamtx/internal/auth"
-	"github.com/bluenviron/mediamtx/internal/conf"
-	"github.com/bluenviron/mediamtx/internal/counterdumper"
-	"github.com/bluenviron/mediamtx/internal/defs"
-	"github.com/bluenviron/mediamtx/internal/externalcmd"
-	"github.com/bluenviron/mediamtx/internal/hooks"
-	"github.com/bluenviron/mediamtx/internal/logger"
-	"github.com/bluenviron/mediamtx/internal/protocols/mpegts"
-	"github.com/bluenviron/mediamtx/internal/stream"
+	"github.com/tarcisoamorim/peep-mediaserver/internal/auth"
+	"github.com/tarcisoamorim/peep-mediaserver/internal/conf"
+	"github.com/tarcisoamorim/peep-mediaserver/internal/counterdumper"
+	"github.com/tarcisoamorim/peep-mediaserver/internal/defs"
+	"github.com/tarcisoamorim/peep-mediaserver/internal/externalcmd"
+	"github.com/tarcisoamorim/peep-mediaserver/internal/hooks"
+	"github.com/tarcisoamorim/peep-mediaserver/internal/logger"
+	"github.com/tarcisoamorim/peep-mediaserver/internal/protocols/mpegts"
+	"github.com/tarcisoamorim/peep-mediaserver/internal/stream"
 )
 
 func srtCheckPassphrase(connReq srt.ConnRequest, passphrase string) error {

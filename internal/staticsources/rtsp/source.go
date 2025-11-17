@@ -10,12 +10,12 @@ import (
 	"github.com/bluenviron/gortsplib/v5/pkg/base"
 	"github.com/bluenviron/gortsplib/v5/pkg/headers"
 
-	"github.com/bluenviron/mediamtx/internal/conf"
-	"github.com/bluenviron/mediamtx/internal/counterdumper"
-	"github.com/bluenviron/mediamtx/internal/defs"
-	"github.com/bluenviron/mediamtx/internal/logger"
-	"github.com/bluenviron/mediamtx/internal/protocols/rtsp"
-	"github.com/bluenviron/mediamtx/internal/protocols/tls"
+	"github.com/tarcisoamorim/peep-mediaserver/internal/conf"
+	"github.com/tarcisoamorim/peep-mediaserver/internal/counterdumper"
+	"github.com/tarcisoamorim/peep-mediaserver/internal/defs"
+	"github.com/tarcisoamorim/peep-mediaserver/internal/logger"
+	"github.com/tarcisoamorim/peep-mediaserver/internal/protocols/rtsp"
+	"github.com/tarcisoamorim/peep-mediaserver/internal/protocols/tls"
 )
 
 func createRangeHeader(cnf *conf.Path) (*headers.Range, error) {

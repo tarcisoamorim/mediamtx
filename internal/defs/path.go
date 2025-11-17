@@ -5,9 +5,9 @@ import (
 
 	"github.com/bluenviron/gortsplib/v5/pkg/description"
 
-	"github.com/bluenviron/mediamtx/internal/conf"
-	"github.com/bluenviron/mediamtx/internal/externalcmd"
-	"github.com/bluenviron/mediamtx/internal/stream"
+	"github.com/tarcisoamorim/peep-mediaserver/internal/conf"
+	"github.com/tarcisoamorim/peep-mediaserver/internal/externalcmd"
+	"github.com/tarcisoamorim/peep-mediaserver/internal/stream"
 )
 
 // PathNoStreamAvailableError is returned when no one is publishing.

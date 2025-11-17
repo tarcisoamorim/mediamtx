@@ -17,9 +17,9 @@ import (
 	"github.com/bluenviron/mediacommon/v2/pkg/codecs/mpeg1audio"
 	"github.com/bluenviron/mediacommon/v2/pkg/codecs/mpeg4audio"
 	"github.com/bluenviron/mediacommon/v2/pkg/codecs/opus"
-	"github.com/bluenviron/mediamtx/internal/logger"
-	"github.com/bluenviron/mediamtx/internal/stream"
-	"github.com/bluenviron/mediamtx/internal/unit"
+	"github.com/tarcisoamorim/peep-mediaserver/internal/logger"
+	"github.com/tarcisoamorim/peep-mediaserver/internal/stream"
+	"github.com/tarcisoamorim/peep-mediaserver/internal/unit"
 )
 
 var errNoSupportedCodecsFrom = errors.New(

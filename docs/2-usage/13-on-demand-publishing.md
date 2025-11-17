@@ -1,6 +1,6 @@
 # On-demand publishing
 
-Edit `mediamtx.yml` and replace everything inside section `paths` with the following content:
+Edit `peep-mediaserver.yml` and replace everything inside section `paths` with the following content:
 
 ```yml
 paths:

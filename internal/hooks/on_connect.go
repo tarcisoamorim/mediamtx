@@ -3,9 +3,9 @@ package hooks
 import (
 	"net"
 
-	"github.com/bluenviron/mediamtx/internal/defs"
-	"github.com/bluenviron/mediamtx/internal/externalcmd"
-	"github.com/bluenviron/mediamtx/internal/logger"
+	"github.com/tarcisoamorim/peep-mediaserver/internal/defs"
+	"github.com/tarcisoamorim/peep-mediaserver/internal/externalcmd"
+	"github.com/tarcisoamorim/peep-mediaserver/internal/logger"
 )
 
 // OnConnectParams are the parameters of OnConnect.

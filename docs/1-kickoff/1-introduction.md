@@ -1,8 +1,8 @@
 # Introduction
 
-Welcome to the MediaMTX documentation!
+Welcome to the Peep-MediaServer documentation!
 
-MediaMTX is a ready-to-use and zero-dependency live media server and media proxy. It has been conceived as a "media router" that routes media streams from one end to the other.
+Peep-MediaServer is a ready-to-use and zero-dependency live media server and media proxy. It has been conceived as a "media router" that routes media streams from one end to the other.
 
 Main features:
 

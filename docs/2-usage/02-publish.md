@@ -94,7 +94,7 @@ paths:
     source: wheps://host:port/path
 ```
 
-If the remote server is a MediaMTX instance, remember to add a `/whep` suffix after the stream name, since in MediaMTX [it's part of the WHEP URL](read#webrtc):
+If the remote server is a Peep-MediaServer instance, remember to add a `/whep` suffix after the stream name, since in Peep-MediaServer [it's part of the WHEP URL](read#webrtc):
 
 ```yml
 paths:
@@ -116,7 +116,7 @@ Some clients that can publish with RTSP are [FFmpeg](#ffmpeg), [GStreamer](#gstr
 
 ### RTSP cameras and servers
 
-Most IP cameras expose their video stream by using a RTSP server that is embedded into the camera itself. In particular, cameras that are compliant with ONVIF profile S or T meet this requirement. You can use _MediaMTX_ to connect to one or several existing RTSP servers and read their media streams:
+Most IP cameras expose their video stream by using a RTSP server that is embedded into the camera itself. In particular, cameras that are compliant with ONVIF profile S or T meet this requirement. You can use _Peep-MediaServer_ to connect to one or several existing RTSP servers and read their media streams:
 
 ```yml
 paths:
@@ -174,7 +174,7 @@ Some clients that can publish with RTMP are [FFmpeg](#ffmpeg), [GStreamer](#gstr
 
 ### RTMP cameras and servers
 
-You can use _MediaMTX_ to connect to one or several existing RTMP servers and read their media streams:
+You can use _Peep-MediaServer_ to connect to one or several existing RTMP servers and read their media streams:
 
 ```yml
 paths:
@@ -187,7 +187,7 @@ The resulting stream is available in path `/proxied`.
 
 ### HLS cameras and servers
 
-HLS is a streaming protocol that works by splitting streams into segments, and by serving these segments and a playlist with the HTTP protocol. You can use _MediaMTX_ to connect to one or several existing HLS servers and read their media streams:
+HLS is a streaming protocol that works by splitting streams into segments, and by serving these segments and a playlist with the HTTP protocol. You can use _Peep-MediaServer_ to connect to one or several existing HLS servers and read their media streams:
 
 ```yml
 paths:
@@ -202,7 +202,7 @@ The resulting stream is available in path `/proxied`.
 
 The server supports ingesting MPEG-TS streams, shipped in two different ways (UDP packets or Unix sockets).
 
-In order to read a UDP MPEG-TS stream, edit `mediamtx.yml` and replace everything inside section `paths` with the following content:
+In order to read a UDP MPEG-TS stream, edit `peep-mediaserver.yml` and replace everything inside section `paths` with the following content:
 
 ```yml
 paths:
@@ -212,7 +212,7 @@ paths:
 
 Where `238.0.0.1` is the IP for listening packets, in this case a multicast IP.
 
-If the listening IP is a multicast IP, _MediaMTX_ will listen for incoming packets on the default multicast interface, picked by the operating system. It is possible to specify the interface manually by using the `interface` parameter:
+If the listening IP is a multicast IP, _Peep-MediaServer_ will listen for incoming packets on the default multicast interface, picked by the operating system. It is possible to specify the interface manually by using the `interface` parameter:
 
 ```yml
 paths:
@@ -242,7 +242,7 @@ paths:
 
 The server supports ingesting RTP streams, shipped in two different ways (UDP packets or Unix sockets).
 
-In order to read a UDP RTP stream, edit `mediamtx.yml` and replace everything inside section `paths` with the following content:
+In order to read a UDP RTP stream, edit `peep-mediaserver.yml` and replace everything inside section `paths` with the following content:
 
 ```yml
 paths:
@@ -284,7 +284,7 @@ paths:
 
 ### Raspberry Pi Cameras
 
-_MediaMTX_ natively supports most of the Raspberry Pi Camera models, enabling high-quality and low-latency video streaming from the camera to any user, for any purpose. There are some additional requirements:
+_Peep-MediaServer_ natively supports most of the Raspberry Pi Camera models, enabling high-quality and low-latency video streaming from the camera to any user, for any purpose. There are some additional requirements:
 
 1. The server must run on a Raspberry Pi, with one of the following operating systems:
    - Raspberry Pi OS Bookworm
@@ -298,7 +298,7 @@ If you want to run the standard (non-Docker) version of the server:
 
 1. Download the server executable. If you're using 64-bit version of the operative system, make sure to pick the `arm64` variant.
 
-2. Edit `mediamtx.yml` and replace everything inside section `paths` with the following content:
+2. Edit `peep-mediaserver.yml` and replace everything inside section `paths` with the following content:
 
    ```yml
    paths:
@@ -319,7 +319,7 @@ docker run --rm -it \
 --tmpfs /dev/shm:exec \
 -v /run/udev:/run/udev:ro \
 -e MTX_PATHS_CAM_SOURCE=rpiCamera \
-bluenviron/mediamtx:latest-rpi
+tarcisoamorim/peep-mediaserver:latest-rpi
 ```
 
 Be aware that precompiled binaries and Docker images are not compatible with cameras that require a custom `libcamera` (like some ArduCam products), since they come with a bundled `libcamera`. If you want to use a custom one, you can [compile from source](/docs/other/compile#custom-libcamera).
@@ -404,7 +404,7 @@ The secondary stream is available in path `/secondary`.
 
 ### Generic webcams
 
-If the operating system is Linux, edit `mediamtx.yml` and replace everything inside section `paths` with the following content:
+If the operating system is Linux, edit `peep-mediaserver.yml` and replace everything inside section `paths` with the following content:
 
 ```yml
 paths:
@@ -452,7 +452,7 @@ ffmpeg -re -stream_loop -1 -i file.ts -c copy -f flv rtmp://localhost:1935/mystr
 
 #### FFmpeg and MPEG-TS over UDP
 
-In MediaMTX configuration, add a path with `source: udp+mpegts://238.0.0.1:1234`. Then:
+In Peep-MediaServer configuration, add a path with `source: udp+mpegts://238.0.0.1:1234`. Then:
 
 ```sh
 ffmpeg -re -stream_loop -1 -i file.ts -c copy -f mpegts 'udp://127.0.0.1:3356?pkt_size=1316'
@@ -468,7 +468,7 @@ ffmpeg -re -f lavfi -i testsrc=size=1280x720:rate=30 \
 
 #### FFmpeg and RTP over UDP
 
-In MediaMTX configuration, add a path with `source: udp+rtp://238.0.0.1:1234` and a valid `rtpSDP` (see [RTP](#rtp)). Then:
+In Peep-MediaServer configuration, add a path with `source: udp+rtp://238.0.0.1:1234` and a valid `rtpSDP` (see [RTP](#rtp)). Then:
 
 ```sh
 ffmpeg -re -f lavfi -i testsrc=size=1280x720:rate=30 \
@@ -796,4 +796,4 @@ This web page can be embedded into another web page by using an iframe:
 <iframe src="http://mediamtx-ip:8889/mystream/publish" scrolling="no"></iframe>
 ```
 
-For more advanced setups, you can create and serve a custom web page by starting from the [source code of the WebRTC publish page](https://github.com/bluenviron/mediamtx/blob/{version_tag}/internal/servers/webrtc/publish_index.html). In particular, there's a ready-to-use, standalone JavaScript class for publishing streams with WebRTC, available in [publisher.js](https://github.com/bluenviron/mediamtx/blob/{version_tag}/internal/servers/webrtc/publisher.js).
+For more advanced setups, you can create and serve a custom web page by starting from the [source code of the WebRTC publish page](https://github.com/tarcisoamorim/peep-mediaserver/blob/{version_tag}/internal/servers/webrtc/publish_index.html). In particular, there's a ready-to-use, standalone JavaScript class for publishing streams with WebRTC, available in [publisher.js](https://github.com/tarcisoamorim/peep-mediaserver/blob/{version_tag}/internal/servers/webrtc/publisher.js).

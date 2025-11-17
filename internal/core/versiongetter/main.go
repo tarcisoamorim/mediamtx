@@ -120,7 +120,7 @@ func tagFromGit() error {
 }
 
 func do() error {
-	log.Println("getting mediamtx version...")
+	log.Println("obtendo versão do peep-mediaserver...")
 
 	err := tagFromGit()
 	if err != nil {

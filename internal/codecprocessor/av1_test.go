@@ -5,7 +5,7 @@ import (
 
 	"github.com/bluenviron/gortsplib/v5/pkg/format"
 	mcav1 "github.com/bluenviron/mediacommon/v2/pkg/codecs/av1"
-	"github.com/bluenviron/mediamtx/internal/unit"
+	"github.com/tarcisoamorim/peep-mediaserver/internal/unit"
 	"github.com/stretchr/testify/require"
 )
 

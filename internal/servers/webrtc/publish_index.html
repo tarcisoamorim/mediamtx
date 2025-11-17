@@ -186,7 +186,7 @@ const setMessage = (str) => {
 const onStream = (stream) => {
   video.srcObject = stream;
 
-  publisher = new MediaMTXWebRTCPublisher({
+  publisher = new PeepMediaServerWebRTCPublisher({
     url: new URL('whip', window.location.href) + window.location.search,
     stream,
     videoCodec: videoForm.codec.value,

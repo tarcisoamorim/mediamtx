@@ -118,11 +118,11 @@ const loadStream = () => {
 				langList.innerHTML = '';
 
 				if (data.details === 'manifestIncompatibleCodecsError') {
-					setMessage('stream makes use of codecs which are not compatible with this browser or operative system');
+					setMessage('stream utiliza codecs incompatíveis com este navegador ou sistema operacional');
 				} else if (data.response && data.response.code === 404) {
-					setMessage('stream not found, retrying in some seconds');
+					setMessage('stream não encontrada, tentando novamente em alguns segundos');
 				} else {
-					setMessage(data.error + ', retrying in some seconds');
+					setMessage(data.error + ', tentando novamente em alguns segundos');
 				}
 
 				setTimeout(() => loadStream(video), retryPause);

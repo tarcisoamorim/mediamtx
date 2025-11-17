@@ -11,11 +11,11 @@ import (
 	"github.com/bluenviron/gortmplib"
 	"github.com/bluenviron/gortsplib/v5/pkg/description"
 	"github.com/bluenviron/gortsplib/v5/pkg/format"
-	"github.com/bluenviron/mediamtx/internal/codecprocessor"
-	"github.com/bluenviron/mediamtx/internal/logger"
-	"github.com/bluenviron/mediamtx/internal/stream"
-	"github.com/bluenviron/mediamtx/internal/test"
-	"github.com/bluenviron/mediamtx/internal/unit"
+	"github.com/tarcisoamorim/peep-mediaserver/internal/codecprocessor"
+	"github.com/tarcisoamorim/peep-mediaserver/internal/logger"
+	"github.com/tarcisoamorim/peep-mediaserver/internal/stream"
+	"github.com/tarcisoamorim/peep-mediaserver/internal/test"
+	"github.com/tarcisoamorim/peep-mediaserver/internal/unit"
 	"github.com/stretchr/testify/require"
 )
 

@@ -5,7 +5,7 @@
 Install git and Go &ge; 1.25. Clone the repository, enter into the folder and start the building process:
 
 ```sh
-git clone https://github.com/bluenviron/mediamtx
+git clone https://github.com/tarcisoamorim/peep-mediaserver
 cd mediamtx
 go generate ./...
 CGO_ENABLED=0 go build .
@@ -25,7 +25,7 @@ opkg install golang git git-http
 Clone the repository, enter into the folder and start the building process:
 
 ```sh
-git clone https://github.com/bluenviron/mediamtx
+git clone https://github.com/tarcisoamorim/peep-mediaserver
 cd mediamtx
 go generate ./...
 CGO_ENABLED=0 go build .
@@ -39,9 +39,9 @@ If the OpenWrt device doesn't have enough resources to compile, you can [cross c
 
 If you need to use a custom or external libcamera when interacting with the Raspberry Pi Camera, some additional steps are needed:
 
-1. Download [mediamtx-rpicamera source code](https://github.com/bluenviron/mediamtx-rpicamera) and compile it against the external libcamera. Instructions are in the repository.
+1. Download [mediamtx-rpicamera source code](https://github.com/tarcisoamorim/peep-mediaserver-rpicamera) and compile it against the external libcamera. Instructions are in the repository.
 
-2. Download [MediaMTX source code](https://github.com/bluenviron/mediamtx) and run:
+2. Download [Peep-MediaServer source code](https://github.com/tarcisoamorim/peep-mediaserver) and run:
 
    ```sh
    go generate ./...
@@ -62,7 +62,7 @@ Cross compilation allows to build an executable for a target machine from anothe
 On the machine you want to use to compile, install git and Go &ge; 1.25. Clone the repository, enter into the folder and start the building process:
 
 ```sh
-git clone https://github.com/bluenviron/mediamtx
+git clone https://github.com/tarcisoamorim/peep-mediaserver
 cd mediamtx
 go generate ./...
 CGO_ENABLED=0 GOOS=my_os GOARCH=my_arch go build .

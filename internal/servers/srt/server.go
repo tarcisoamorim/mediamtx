@@ -13,11 +13,11 @@ import (
 	srt "github.com/datarhei/gosrt"
 	"github.com/google/uuid"
 
-	"github.com/bluenviron/mediamtx/internal/conf"
-	"github.com/bluenviron/mediamtx/internal/defs"
-	"github.com/bluenviron/mediamtx/internal/externalcmd"
-	"github.com/bluenviron/mediamtx/internal/logger"
-	"github.com/bluenviron/mediamtx/internal/stream"
+	"github.com/tarcisoamorim/peep-mediaserver/internal/conf"
+	"github.com/tarcisoamorim/peep-mediaserver/internal/defs"
+	"github.com/tarcisoamorim/peep-mediaserver/internal/externalcmd"
+	"github.com/tarcisoamorim/peep-mediaserver/internal/logger"
+	"github.com/tarcisoamorim/peep-mediaserver/internal/stream"
 )
 
 // ErrConnNotFound is returned when a connection is not found.

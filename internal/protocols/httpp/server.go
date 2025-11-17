@@ -12,9 +12,9 @@ import (
 	"strings"
 	"time"
 
-	"github.com/bluenviron/mediamtx/internal/certloader"
-	"github.com/bluenviron/mediamtx/internal/logger"
-	"github.com/bluenviron/mediamtx/internal/restrictnetwork"
+	"github.com/tarcisoamorim/peep-mediaserver/internal/certloader"
+	"github.com/tarcisoamorim/peep-mediaserver/internal/logger"
+	"github.com/tarcisoamorim/peep-mediaserver/internal/restrictnetwork"
 )
 
 type nilWriter struct{}

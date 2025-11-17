@@ -18,22 +18,22 @@ import (
 	"github.com/bluenviron/gortsplib/v5"
 	"github.com/gin-gonic/gin"
 
-	"github.com/bluenviron/mediamtx/internal/api"
-	"github.com/bluenviron/mediamtx/internal/auth"
-	"github.com/bluenviron/mediamtx/internal/conf"
-	"github.com/bluenviron/mediamtx/internal/confwatcher"
-	"github.com/bluenviron/mediamtx/internal/externalcmd"
-	"github.com/bluenviron/mediamtx/internal/logger"
-	"github.com/bluenviron/mediamtx/internal/metrics"
-	"github.com/bluenviron/mediamtx/internal/playback"
-	"github.com/bluenviron/mediamtx/internal/pprof"
-	"github.com/bluenviron/mediamtx/internal/recordcleaner"
-	"github.com/bluenviron/mediamtx/internal/rlimit"
-	"github.com/bluenviron/mediamtx/internal/servers/hls"
-	"github.com/bluenviron/mediamtx/internal/servers/rtmp"
-	"github.com/bluenviron/mediamtx/internal/servers/rtsp"
-	"github.com/bluenviron/mediamtx/internal/servers/srt"
-	"github.com/bluenviron/mediamtx/internal/servers/webrtc"
+	"github.com/tarcisoamorim/peep-mediaserver/internal/api"
+	"github.com/tarcisoamorim/peep-mediaserver/internal/auth"
+	"github.com/tarcisoamorim/peep-mediaserver/internal/conf"
+	"github.com/tarcisoamorim/peep-mediaserver/internal/confwatcher"
+	"github.com/tarcisoamorim/peep-mediaserver/internal/externalcmd"
+	"github.com/tarcisoamorim/peep-mediaserver/internal/logger"
+	"github.com/tarcisoamorim/peep-mediaserver/internal/metrics"
+	"github.com/tarcisoamorim/peep-mediaserver/internal/playback"
+	"github.com/tarcisoamorim/peep-mediaserver/internal/pprof"
+	"github.com/tarcisoamorim/peep-mediaserver/internal/recordcleaner"
+	"github.com/tarcisoamorim/peep-mediaserver/internal/rlimit"
+	"github.com/tarcisoamorim/peep-mediaserver/internal/servers/hls"
+	"github.com/tarcisoamorim/peep-mediaserver/internal/servers/rtmp"
+	"github.com/tarcisoamorim/peep-mediaserver/internal/servers/rtsp"
+	"github.com/tarcisoamorim/peep-mediaserver/internal/servers/srt"
+	"github.com/tarcisoamorim/peep-mediaserver/internal/servers/webrtc"
 )
 
 //go:generate go run ./versiongetter
@@ -44,14 +44,13 @@ var version []byte
 var started = time.Now()
 
 var defaultConfPaths = []string{
-	"rtsp-simple-server.yml",
-	"mediamtx.yml",
+	"peep-mediaserver.yml",
 }
 
 var defaultConfPathsNotWin = []string{
-	"/usr/local/etc/mediamtx.yml",
-	"/usr/etc/mediamtx.yml",
-	"/etc/mediamtx/mediamtx.yml",
+	"/usr/local/etc/peep-mediaserver.yml",
+	"/usr/etc/peep-mediaserver.yml",
+	"/etc/peep-mediaserver/peep-mediaserver.yml",
 }
 
 var cli struct {
@@ -115,12 +114,12 @@ type Core struct {
 // New allocates a Core.
 func New(args []string) (*Core, bool) {
 	parser, err := kong.New(&cli,
-		kong.Description("MediaMTX "+string(version)),
+		kong.Description("Peep-MediaServer "+string(version)),
 		kong.UsageOnError(),
 		kong.ValueFormatter(func(value *kong.Value) string {
 			switch value.Name {
 			case "confpath":
-				return "path to a config file. The default is mediamtx.yml."
+				return "caminho para o arquivo de configuração. O padrão é peep-mediaserver.yml."
 
 			default:
 				return kong.DefaultHelpValueFormatter(value)

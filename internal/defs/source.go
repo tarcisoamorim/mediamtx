@@ -7,7 +7,7 @@ import (
 	"github.com/bluenviron/gortsplib/v5/pkg/description"
 	"github.com/bluenviron/gortsplib/v5/pkg/format"
 
-	"github.com/bluenviron/mediamtx/internal/logger"
+	"github.com/tarcisoamorim/peep-mediaserver/internal/logger"
 )
 
 // Source is an entity that can provide a stream.

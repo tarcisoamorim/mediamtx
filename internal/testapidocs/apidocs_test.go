@@ -7,9 +7,9 @@ import (
 	"testing"
 	"time"
 
-	"github.com/bluenviron/mediamtx/internal/conf"
-	"github.com/bluenviron/mediamtx/internal/conf/yamlwrapper"
-	"github.com/bluenviron/mediamtx/internal/defs"
+	"github.com/tarcisoamorim/peep-mediaserver/internal/conf"
+	"github.com/tarcisoamorim/peep-mediaserver/internal/conf/yamlwrapper"
+	"github.com/tarcisoamorim/peep-mediaserver/internal/defs"
 	"github.com/stretchr/testify/require"
 )
 

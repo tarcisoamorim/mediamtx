@@ -8,8 +8,8 @@ import (
 	"github.com/bluenviron/gortmplib/pkg/message"
 	"github.com/bluenviron/gortsplib/v5/pkg/description"
 	"github.com/bluenviron/gortsplib/v5/pkg/format"
-	"github.com/bluenviron/mediamtx/internal/stream"
-	"github.com/bluenviron/mediamtx/internal/unit"
+	"github.com/tarcisoamorim/peep-mediaserver/internal/stream"
+	"github.com/tarcisoamorim/peep-mediaserver/internal/unit"
 )
 
 var errNoSupportedCodecsTo = errors.New(

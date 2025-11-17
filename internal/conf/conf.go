@@ -17,11 +17,11 @@ import (
 	"github.com/bluenviron/gortsplib/v5"
 	"github.com/bluenviron/gortsplib/v5/pkg/auth"
 
-	"github.com/bluenviron/mediamtx/internal/conf/decrypt"
-	"github.com/bluenviron/mediamtx/internal/conf/env"
-	"github.com/bluenviron/mediamtx/internal/conf/jsonwrapper"
-	"github.com/bluenviron/mediamtx/internal/conf/yamlwrapper"
-	"github.com/bluenviron/mediamtx/internal/logger"
+	"github.com/tarcisoamorim/peep-mediaserver/internal/conf/decrypt"
+	"github.com/tarcisoamorim/peep-mediaserver/internal/conf/env"
+	"github.com/tarcisoamorim/peep-mediaserver/internal/conf/jsonwrapper"
+	"github.com/tarcisoamorim/peep-mediaserver/internal/conf/yamlwrapper"
+	"github.com/tarcisoamorim/peep-mediaserver/internal/logger"
 )
 
 // ErrPathNotFound is returned when a path is not found.

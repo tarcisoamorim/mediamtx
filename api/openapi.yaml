@@ -2,8 +2,8 @@ openapi: 3.0.0
 
 info:
   version: 1.0.0
-  title: MediaMTX API
-  description: API of MediaMTX, a server and proxy that supports various protocols.
+  title: Peep-MediaServer API
+  description: API do Peep-MediaServer, um servidor e proxy para streaming de câmeras CFTV que suporta vários protocolos.
   license:
     name: MIT
     url: https://opensource.org/licenses/MIT

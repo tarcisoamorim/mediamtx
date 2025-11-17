@@ -15,9 +15,9 @@ import (
 	mcmpegts "github.com/bluenviron/mediacommon/v2/pkg/formats/mpegts"
 	srt "github.com/datarhei/gosrt"
 
-	"github.com/bluenviron/mediamtx/internal/logger"
-	"github.com/bluenviron/mediamtx/internal/stream"
-	"github.com/bluenviron/mediamtx/internal/unit"
+	"github.com/tarcisoamorim/peep-mediaserver/internal/logger"
+	"github.com/tarcisoamorim/peep-mediaserver/internal/stream"
+	"github.com/tarcisoamorim/peep-mediaserver/internal/unit"
 )
 
 func multiplyAndDivide(v, m, d int64) int64 {

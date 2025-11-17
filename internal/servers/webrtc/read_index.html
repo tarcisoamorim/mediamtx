@@ -85,7 +85,7 @@ const loadAttributesFromQuery = () => {
 window.addEventListener('load', () => {
   loadAttributesFromQuery();
 
-  reader = new MediaMTXWebRTCReader({
+  reader = new PeepMediaServerWebRTCReader({
     url: new URL('whep', window.location.href) + window.location.search,
     onError: (err) => {
       setMessage(err);

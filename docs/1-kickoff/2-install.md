@@ -4,7 +4,7 @@ There are several installation methods available: standalone binary, Docker imag
 
 ## Standalone binary
 
-1. Visit the [Releases page](https://github.com/bluenviron/mediamtx/releases) on GitHub, download and extract a standalone binary that corresponds to your operating system and architecture (example: `mediamtx_{version_tag}_linux_amd64.tar.gz`).
+1. Visit the [Releases page](https://github.com/tarcisoamorim/peep-mediaserver/releases) on GitHub, download and extract a standalone binary that corresponds to your operating system and architecture (example: `mediamtx_{version_tag}_linux_amd64.tar.gz`).
 
 2. Start the server:
 
@@ -14,7 +14,7 @@ There are several installation methods available: standalone binary, Docker imag
 
 ## Docker image
 
-Download and launch the `bluenviron/mediamtx:1` image with the following environment variables and ports:
+Download and launch the `tarcisoamorim/peep-mediaserver:1` image with the following environment variables and ports:
 
 ```sh
 docker run --rm -it \
@@ -26,7 +26,7 @@ docker run --rm -it \
 -p 8889:8889 \
 -p 8890:8890/udp \
 -p 8189:8189/udp \
-bluenviron/mediamtx:1
+tarcisoamorim/peep-mediaserver:1
 ```
 
 Fill the `MTX_WEBRTCADDITIONALHOSTS` environment variable with the IP that will be used to connect to the server.
@@ -34,19 +34,19 @@ Fill the `MTX_WEBRTCADDITIONALHOSTS` environment variable with the IP that will 
 The `MTX_RTSPTRANSPORTS=tcp` environment variable is meant to disable the RTSP UDP transport protocol. If you want to use it, you also need `--network=host` (which is not compatible with Windows, macOS and Kubernetes):
 
 ```sh
-docker run --rm -it --network=host bluenviron/mediamtx:1
+docker run --rm -it --network=host tarcisoamorim/peep-mediaserver:1
 ```
 
 There are four image variants:
 
 | name                             | FFmpeg included    | RPI Camera support |
 | -------------------------------- | ------------------ | ------------------ |
-| bluenviron/mediamtx:1            | :x:                | :x:                |
-| bluenviron/mediamtx:1-ffmpeg     | :heavy_check_mark: | :x:                |
-| bluenviron/mediamtx:1-rpi        | :x:                | :heavy_check_mark: |
-| bluenviron/mediamtx:1-ffmpeg-rpi | :heavy_check_mark: | :heavy_check_mark: |
+| tarcisoamorim/peep-mediaserver:1            | :x:                | :x:                |
+| tarcisoamorim/peep-mediaserver:1-ffmpeg     | :heavy_check_mark: | :x:                |
+| tarcisoamorim/peep-mediaserver:1-rpi        | :x:                | :heavy_check_mark: |
+| tarcisoamorim/peep-mediaserver:1-ffmpeg-rpi | :heavy_check_mark: | :heavy_check_mark: |
 
-The `1` tag corresponds to the latest `1.x.x` release, that should guarantee backward compatibility when upgrading. It is also possible to bind the image to a specific release, by using the release name as tag (`bluenviron/mediamtx:{docker_version_tag}`).
+The `1` tag corresponds to the latest `1.x.x` release, that should guarantee backward compatibility when upgrading. It is also possible to bind the image to a specific release, by using the release name as tag (`tarcisoamorim/peep-mediaserver:{docker_version_tag}`).
 
 ## Arch Linux package
 

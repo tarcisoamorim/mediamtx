@@ -10,14 +10,14 @@ import (
 
 	"github.com/bluenviron/gortsplib/v5/pkg/description"
 
-	"github.com/bluenviron/mediamtx/internal/conf"
-	"github.com/bluenviron/mediamtx/internal/defs"
-	"github.com/bluenviron/mediamtx/internal/externalcmd"
-	"github.com/bluenviron/mediamtx/internal/hooks"
-	"github.com/bluenviron/mediamtx/internal/logger"
-	"github.com/bluenviron/mediamtx/internal/recorder"
-	"github.com/bluenviron/mediamtx/internal/staticsources"
-	"github.com/bluenviron/mediamtx/internal/stream"
+	"github.com/tarcisoamorim/peep-mediaserver/internal/conf"
+	"github.com/tarcisoamorim/peep-mediaserver/internal/defs"
+	"github.com/tarcisoamorim/peep-mediaserver/internal/externalcmd"
+	"github.com/tarcisoamorim/peep-mediaserver/internal/hooks"
+	"github.com/tarcisoamorim/peep-mediaserver/internal/logger"
+	"github.com/tarcisoamorim/peep-mediaserver/internal/recorder"
+	"github.com/tarcisoamorim/peep-mediaserver/internal/staticsources"
+	"github.com/tarcisoamorim/peep-mediaserver/internal/stream"
 )
 
 func emptyTimer() *time.Timer {

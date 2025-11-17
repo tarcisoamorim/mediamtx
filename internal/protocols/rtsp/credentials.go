@@ -3,7 +3,7 @@ package rtsp
 import (
 	"github.com/bluenviron/gortsplib/v5/pkg/base"
 	"github.com/bluenviron/gortsplib/v5/pkg/headers"
-	"github.com/bluenviron/mediamtx/internal/auth"
+	"github.com/tarcisoamorim/peep-mediaserver/internal/auth"
 )
 
 // Credentials extracts credentials from a RTSP request.

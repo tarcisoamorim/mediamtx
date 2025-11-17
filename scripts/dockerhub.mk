@@ -1,4 +1,4 @@
-DOCKER_REPOSITORY = bluenviron/mediamtx
+DOCKER_REPOSITORY = tarcisoamorim/peep-mediaserver
 
 dockerhub:
 	$(eval VERSION := $(shell git describe --tags | tr -d v))

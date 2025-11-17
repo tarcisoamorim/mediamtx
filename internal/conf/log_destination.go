@@ -6,8 +6,8 @@ import (
 	"slices"
 	"strings"
 
-	"github.com/bluenviron/mediamtx/internal/conf/jsonwrapper"
-	"github.com/bluenviron/mediamtx/internal/logger"
+	"github.com/tarcisoamorim/peep-mediaserver/internal/conf/jsonwrapper"
+	"github.com/tarcisoamorim/peep-mediaserver/internal/logger"
 )
 
 // LogDestinations is the logDestionations parameter.

@@ -8,11 +8,11 @@ import (
 	"github.com/bluenviron/gortsplib/v5/pkg/format"
 	"github.com/pion/rtp"
 
-	"github.com/bluenviron/mediamtx/internal/codecprocessor"
-	"github.com/bluenviron/mediamtx/internal/counterdumper"
-	"github.com/bluenviron/mediamtx/internal/logger"
-	"github.com/bluenviron/mediamtx/internal/ntpestimator"
-	"github.com/bluenviron/mediamtx/internal/unit"
+	"github.com/tarcisoamorim/peep-mediaserver/internal/codecprocessor"
+	"github.com/tarcisoamorim/peep-mediaserver/internal/counterdumper"
+	"github.com/tarcisoamorim/peep-mediaserver/internal/logger"
+	"github.com/tarcisoamorim/peep-mediaserver/internal/ntpestimator"
+	"github.com/tarcisoamorim/peep-mediaserver/internal/unit"
 )
 
 func unitSize(u *unit.Unit) uint64 {

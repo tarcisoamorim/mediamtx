@@ -87,13 +87,13 @@ Some clients that can read with RTMP are [FFmpeg](#ffmpeg), [GStreamer](#gstream
 
 ### HLS
 
-HLS is a protocol that works by splitting streams into segments, and by serving these segments and a playlist with the HTTP protocol. You can use _MediaMTX_ to generate a HLS stream, that is accessible through a web page:
+HLS is a protocol that works by splitting streams into segments, and by serving these segments and a playlist with the HTTP protocol. You can use _Peep-MediaServer_ to generate a HLS stream, that is accessible through a web page:
 
 ```
 http://localhost:8888/mystream
 ```
 
-and can also be accessed without using the browsers, by software that supports the HLS protocol (for instance VLC or _MediaMTX_ itself) by using this URL:
+and can also be accessed without using the browsers, by software that supports the HLS protocol (for instance VLC or _Peep-MediaServer_ itself) by using this URL:
 
 ```
 http://localhost:8888/mystream/index.m3u8
@@ -256,7 +256,7 @@ snap install vlc
 
 #### Encrypted RTSP compatibility
 
-At the moment VLC doesn't support reading encrypted RTSP streams. However, you can use a proxy like [stunnel](https://www.stunnel.org) or [nginx](https://nginx.org/) or a local _MediaMTX_ instance to decrypt streams before reading them.
+At the moment VLC doesn't support reading encrypted RTSP streams. However, you can use a proxy like [stunnel](https://www.stunnel.org) or [nginx](https://nginx.org/) or a local _Peep-MediaServer_ instance to decrypt streams before reading them.
 
 ### OBS Studio
 

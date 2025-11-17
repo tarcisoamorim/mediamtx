@@ -3,7 +3,7 @@ package conf
 import (
 	"fmt"
 
-	"github.com/bluenviron/mediamtx/internal/conf/jsonwrapper"
+	"github.com/tarcisoamorim/peep-mediaserver/internal/conf/jsonwrapper"
 )
 
 // AuthInternalUserPermission is a permission of a user.

@@ -10,13 +10,13 @@ import (
 
 	"github.com/bluenviron/gortsplib/v5/pkg/description"
 
-	"github.com/bluenviron/mediamtx/internal/conf"
-	"github.com/bluenviron/mediamtx/internal/defs"
-	"github.com/bluenviron/mediamtx/internal/logger"
-	"github.com/bluenviron/mediamtx/internal/protocols/tls"
-	"github.com/bluenviron/mediamtx/internal/protocols/webrtc"
-	"github.com/bluenviron/mediamtx/internal/protocols/whip"
-	"github.com/bluenviron/mediamtx/internal/stream"
+	"github.com/tarcisoamorim/peep-mediaserver/internal/conf"
+	"github.com/tarcisoamorim/peep-mediaserver/internal/defs"
+	"github.com/tarcisoamorim/peep-mediaserver/internal/logger"
+	"github.com/tarcisoamorim/peep-mediaserver/internal/protocols/tls"
+	"github.com/tarcisoamorim/peep-mediaserver/internal/protocols/webrtc"
+	"github.com/tarcisoamorim/peep-mediaserver/internal/protocols/whip"
+	"github.com/tarcisoamorim/peep-mediaserver/internal/stream"
 )
 
 type parent interface {

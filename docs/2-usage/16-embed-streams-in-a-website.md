@@ -20,12 +20,12 @@ The iframe can be controlled by adding query parameters to the URL (example: `ht
 
 The iframe method is fit for most use cases, but it has some limitations:
 
-- it doesn't allow to pass credentials (username, password or token) from the website to MediaMTX; credentials are asked directly to users.
+- it doesn't allow to pass credentials (username, password or token) from the website to Peep-MediaServer; credentials are asked directly to users.
 - it doesn't allow to directly access the video tag, to extract data from it, or to perform dynamic actions.
 
 In order to overcome these limitations, it is possible to load the stream directly inside a `<video>` tag in the web page, through a JavaScript library.
 
-Download [reader.js](https://github.com/bluenviron/mediamtx/blob/{version_tag}/internal/servers/webrtc/reader.js) from the repository and serve it together with the other assets of the website.
+Download [reader.js](https://github.com/tarcisoamorim/peep-mediaserver/blob/{version_tag}/internal/servers/webrtc/reader.js) from the repository and serve it together with the other assets of the website.
 
 If you are using a JavaScript bundler, you can import it by using:
 
@@ -52,7 +52,7 @@ After the video tag, add a script that initializes the stream when the page is f
   let reader = null;
 
   window.addEventListener("load", () => {
-    reader = new MediaMTXWebRTCReader({
+    reader = new Peep-MediaServerWebRTCReader({
       url: "http://mediamtx-ip:8889/mystream/whep",
       user: "", // fill if needed
       pass: "", // fill if needed
@@ -94,7 +94,7 @@ The iframe can be controlled by adding query parameters to the URL (example: `ht
 
 The iframe method is fit for most use cases, but it has some limitations:
 
-- it doesn't allow to pass credentials (username, password or token) from the website to MediaMTX; credentials are asked directly to users.
+- it doesn't allow to pass credentials (username, password or token) from the website to Peep-MediaServer; credentials are asked directly to users.
 - it doesn't allow to directly access the video tag, to extract data from it, or to perform dynamic actions.
 
 In order to overcome these limitations, it is possible to load the stream directly inside a `<video>` tag in the web page, through the _hls.js_ library.

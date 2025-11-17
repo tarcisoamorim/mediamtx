@@ -8,8 +8,8 @@ import (
 	"github.com/bluenviron/gortsplib/v5/pkg/format/rtpav1"
 	mcav1 "github.com/bluenviron/mediacommon/v2/pkg/codecs/av1"
 
-	"github.com/bluenviron/mediamtx/internal/logger"
-	"github.com/bluenviron/mediamtx/internal/unit"
+	"github.com/tarcisoamorim/peep-mediaserver/internal/logger"
+	"github.com/tarcisoamorim/peep-mediaserver/internal/unit"
 )
 
 type av1 struct {

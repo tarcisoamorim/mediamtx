@@ -11,9 +11,9 @@ import (
 	"github.com/bluenviron/mediacommon/v2/pkg/formats/mpegts"
 	"github.com/stretchr/testify/require"
 
-	"github.com/bluenviron/mediamtx/internal/conf"
-	"github.com/bluenviron/mediamtx/internal/defs"
-	"github.com/bluenviron/mediamtx/internal/test"
+	"github.com/tarcisoamorim/peep-mediaserver/internal/conf"
+	"github.com/tarcisoamorim/peep-mediaserver/internal/defs"
+	"github.com/tarcisoamorim/peep-mediaserver/internal/test"
 )
 
 func multicastCapableInterface(t *testing.T) string {

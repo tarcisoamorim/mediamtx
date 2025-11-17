@@ -27,9 +27,9 @@
  */
 
 /** WebRTC/WHIP publisher. */
-class MediaMTXWebRTCPublisher {
+class PeepMediaServerWebRTCPublisher {
   /**
-   * Create a MediaMTXWebRTCPublisher.
+   * Create a PeepMediaServerWebRTCPublisher.
    * @param {Conf} conf - configuration.
    */
   constructor(conf) {
@@ -297,7 +297,7 @@ class MediaMTXWebRTCPublisher {
         ...this.#authHeader(),
       },
     })
-      .then((res) => MediaMTXWebRTCPublisher.#linkToIceServers(res.headers.get('Link')));
+      .then((res) => PeepMediaServerWebRTCPublisher.#linkToIceServers(res.headers.get('Link')));
   }
 
   #setupPeerConnection(iceServers) {
@@ -320,7 +320,7 @@ class MediaMTXWebRTCPublisher {
 
     return this.pc.createOffer()
       .then((offer) => {
-        this.offerData = MediaMTXWebRTCPublisher.#parseOffer(offer.sdp);
+        this.offerData = PeepMediaServerWebRTCPublisher.#parseOffer(offer.sdp);
 
         return this.pc.setLocalDescription(offer)
           .then(() => offer.sdp);
@@ -332,7 +332,7 @@ class MediaMTXWebRTCPublisher {
       throw new Error('closed');
     }
 
-    offer = MediaMTXWebRTCPublisher.#editOffer(
+    offer = PeepMediaServerWebRTCPublisher.#editOffer(
       offer,
       this.conf.videoCodec,
       this.conf.audioCodec,
@@ -368,7 +368,7 @@ class MediaMTXWebRTCPublisher {
       throw new Error('closed');
     }
 
-    answer = MediaMTXWebRTCPublisher.#editAnswer(answer, this.conf.videoBitrate);
+    answer = PeepMediaServerWebRTCPublisher.#editAnswer(answer, this.conf.videoBitrate);
 
     return this.pc.setRemoteDescription(new RTCSessionDescription({
       type: 'answer',
@@ -407,7 +407,7 @@ class MediaMTXWebRTCPublisher {
         'Content-Type': 'application/trickle-ice-sdpfrag',
         'If-Match': '*',
       },
-      body: MediaMTXWebRTCPublisher.#generateSdpFragment(this.offerData, candidates),
+      body: PeepMediaServerWebRTCPublisher.#generateSdpFragment(this.offerData, candidates),
     })
       .then((res) => {
         switch (res.status) {
@@ -446,4 +446,4 @@ class MediaMTXWebRTCPublisher {
 
 }
 
-window.MediaMTXWebRTCPublisher = MediaMTXWebRTCPublisher;
+window.PeepMediaServerWebRTCPublisher = PeepMediaServerWebRTCPublisher;

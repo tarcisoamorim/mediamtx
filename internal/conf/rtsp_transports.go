@@ -7,7 +7,7 @@ import (
 	"strings"
 
 	"github.com/bluenviron/gortsplib/v5"
-	"github.com/bluenviron/mediamtx/internal/conf/jsonwrapper"
+	"github.com/tarcisoamorim/peep-mediaserver/internal/conf/jsonwrapper"
 )
 
 // RTSPTransports is the rtspTransports parameter.

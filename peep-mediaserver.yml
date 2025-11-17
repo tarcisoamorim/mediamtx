@@ -11,9 +11,9 @@ logLevel: info
 # Destinations of log messages; available values are "stdout", "file" and "syslog".
 logDestinations: [stdout]
 # If "file" is in logDestinations, this is the file which will receive the logs.
-logFile: mediamtx.log
+logFile: peep-mediaserver.log
 # If "syslog" is in logDestinations, use prefix for logs.
-sysLogPrefix: mediamtx
+sysLogPrefix: peep-mediaserver
 
 # Timeout of read operations.
 readTimeout: 10s

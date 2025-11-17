@@ -8,8 +8,8 @@ import (
 	"github.com/bluenviron/gortsplib/v5/pkg/format/rtph265"
 	mch265 "github.com/bluenviron/mediacommon/v2/pkg/codecs/h265"
 
-	"github.com/bluenviron/mediamtx/internal/logger"
-	"github.com/bluenviron/mediamtx/internal/unit"
+	"github.com/tarcisoamorim/peep-mediaserver/internal/logger"
+	"github.com/tarcisoamorim/peep-mediaserver/internal/unit"
 )
 
 // H265-related parameters

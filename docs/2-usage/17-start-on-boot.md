@@ -8,7 +8,7 @@ Move the server executable and configuration in global folders:
 
 ```sh
 sudo mv mediamtx /usr/local/bin/
-sudo mv mediamtx.yml /usr/local/etc/
+sudo mv peep-mediaserver.yml /usr/local/etc/
 ```
 
 Create a _systemd_ service:
@@ -19,13 +19,13 @@ sudo tee /etc/systemd/system/mediamtx.service >/dev/null << EOF
 After=network-online.target
 Wants=network-online.target
 [Service]
-ExecStart=/usr/local/bin/mediamtx /usr/local/etc/mediamtx.yml
+ExecStart=/usr/local/bin/mediamtx /usr/local/etc/peep-mediaserver.yml
 [Install]
 WantedBy=multi-user.target
 EOF
 ```
 
-Enable a _wait-online_ service to make sure that _MediaMTX_ is started after network has been properly initialized:
+Enable a _wait-online_ service to make sure that _Peep-MediaServer_ is started after network has been properly initialized:
 
 ```sh
 sudo systemctl enable systemd-networkd-wait-online.service
@@ -52,7 +52,7 @@ Move the server executable and configuration in global folders:
 
 ```sh
 mv mediamtx /usr/bin/
-mkdir -p /usr/etc && mv mediamtx.yml /usr/etc/
+mkdir -p /usr/etc && mv peep-mediaserver.yml /usr/etc/
 ```
 
 Create a procd service:

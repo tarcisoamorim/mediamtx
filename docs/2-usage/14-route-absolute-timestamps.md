@@ -1,6 +1,6 @@
 # Route absolute timestamps
 
-Some streaming protocols allow to route absolute timestamps, associated with each frame, that are useful for synchronizing several video or data streams together. In particular, _MediaMTX_ supports receiving absolute timestamps with the following protocols and devices:
+Some streaming protocols allow to route absolute timestamps, associated with each frame, that are useful for synchronizing several video or data streams together. In particular, _Peep-MediaServer_ supports receiving absolute timestamps with the following protocols and devices:
 
 - HLS
 - RTSP

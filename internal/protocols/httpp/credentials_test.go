@@ -5,7 +5,7 @@ import (
 	"net/url"
 	"testing"
 
-	"github.com/bluenviron/mediamtx/internal/auth"
+	"github.com/tarcisoamorim/peep-mediaserver/internal/auth"
 	"github.com/stretchr/testify/require"
 )
 

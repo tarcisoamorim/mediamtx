@@ -10,7 +10,7 @@ import (
 
 	"github.com/bluenviron/gortsplib/v5/pkg/multicast"
 	"github.com/bluenviron/gortsplib/v5/pkg/readbuffer"
-	"github.com/bluenviron/mediamtx/internal/restrictnetwork"
+	"github.com/tarcisoamorim/peep-mediaserver/internal/restrictnetwork"
 )
 
 type packetConn interface {

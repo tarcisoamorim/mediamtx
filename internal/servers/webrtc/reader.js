@@ -22,9 +22,9 @@
  */
 
 /** WebRTC/WHEP reader. */
-class MediaMTXWebRTCReader {
+class PeepMediaServerWebRTCReader {
   /**
-   * Create a MediaMTXWebRTCReader.
+   * Create a PeepMediaServerWebRTCReader.
    * @param {Conf} conf - configuration.
    */
   constructor(conf) {
@@ -380,7 +380,7 @@ class MediaMTXWebRTCReader {
       ['multiopus/48000/6', 'channel_mapping=0,4,1,2,3,5;num_streams=4;coupled_streams=2'],
       ['L16/48000/2'],
     ]
-      .map((c) => MediaMTXWebRTCReader.#supportsNonAdvertisedCodec(c[0], c[1]).then((r) => ((r) ? c[0] : false))))
+      .map((c) => PeepMediaServerWebRTCReader.#supportsNonAdvertisedCodec(c[0], c[1]).then((r) => ((r) ? c[0] : false))))
       .then((c) => c.filter((e) => e !== false))
       .then((codecs) => {
         if (this.state !== 'getting_codecs') {
@@ -424,7 +424,7 @@ class MediaMTXWebRTCReader {
         ...this.#authHeader(),
       },
     })
-      .then((res) => MediaMTXWebRTCReader.#linkToIceServers(res.headers.get('Link')));
+      .then((res) => PeepMediaServerWebRTCReader.#linkToIceServers(res.headers.get('Link')));
   }
 
   #setupPeerConnection(iceServers) {
@@ -448,8 +448,8 @@ class MediaMTXWebRTCReader {
 
     return this.pc.createOffer()
       .then((offer) => {
-        offer.sdp = MediaMTXWebRTCReader.#editOffer(offer.sdp, this.nonAdvertisedCodecs);
-        this.offerData = MediaMTXWebRTCReader.#parseOffer(offer.sdp);
+        offer.sdp = PeepMediaServerWebRTCReader.#editOffer(offer.sdp, this.nonAdvertisedCodecs);
+        this.offerData = PeepMediaServerWebRTCReader.#parseOffer(offer.sdp);
 
         return this.pc.setLocalDescription(offer)
           .then(() => offer.sdp);
@@ -529,7 +529,7 @@ class MediaMTXWebRTCReader {
         'Content-Type': 'application/trickle-ice-sdpfrag',
         'If-Match': '*',
       },
-      body: MediaMTXWebRTCReader.#generateSdpFragment(this.offerData, candidates),
+      body: PeepMediaServerWebRTCReader.#generateSdpFragment(this.offerData, candidates),
     })
       .then((res) => {
         switch (res.status) {
@@ -569,4 +569,4 @@ class MediaMTXWebRTCReader {
   }
 }
 
-window.MediaMTXWebRTCReader = MediaMTXWebRTCReader;
+window.PeepMediaServerWebRTCReader = PeepMediaServerWebRTCReader;

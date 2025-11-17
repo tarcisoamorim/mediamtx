@@ -1,6 +1,6 @@
-module github.com/bluenviron/mediamtx
+module github.com/tarcisoamorim/peep-mediaserver
 
-go 1.25.0
+go 1.24.0
 
 require (
 	code.cloudfoundry.org/bytefmt v0.57.0

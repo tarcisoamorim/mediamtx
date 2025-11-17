@@ -1,8 +1,8 @@
 package core
 
 import (
-	"github.com/bluenviron/mediamtx/internal/defs"
-	"github.com/bluenviron/mediamtx/internal/logger"
+	"github.com/tarcisoamorim/peep-mediaserver/internal/defs"
+	"github.com/tarcisoamorim/peep-mediaserver/internal/logger"
 )
 
 // sourceRedirect is a source that redirects to another one.

@@ -58,7 +58,7 @@ openssl genrsa -out server.key 2048
 openssl req -new -x509 -sha256 -key server.key -out server.crt -days 3650
 ```
 
-Edit `mediamtx.yml` and set the `encryption`, `serverKey` and serverCert parameters:
+Edit `peep-mediaserver.yml` and set the `encryption`, `serverKey` and serverCert parameters:
 
 ```yml
 rtspEncryption: optional
@@ -94,7 +94,7 @@ In environments where HTTP is the only protocol available for exposing services 
 - RTSP over WebSocket: more efficient, requires WebSocket support from the gateway / firewall
 - RTSP over HTTP: older variant, should work even in extreme cases
 
-_MediaMTX_ is automatically able to handle incoming HTTP tunneled connections, without any configuration required.
+_Peep-MediaServer_ is automatically able to handle incoming HTTP tunneled connections, without any configuration required.
 
 In order to read a RTSP from an external server using HTTP tunneling, you can use the `rtsp+http` scheme:
 

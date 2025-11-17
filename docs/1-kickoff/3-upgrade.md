@@ -1,6 +1,6 @@
 # Upgrade
 
-If you have an existing MediaMTX installation, you can upgrade it to the latest version. The procedure depends on how MediaMTX was installed.
+If you have an existing Peep-MediaServer installation, you can upgrade it to the latest version. The procedure depends on how Peep-MediaServer was installed.
 
 ## Standalone binary
 
@@ -10,14 +10,14 @@ The standalone binary comes with a upgrade utility that can be launched with:
 ./mediamtx --upgrade
 ```
 
-This will replace the MediaMTX executable with its latest version. Privileges to write to the executable location are required.
+This will replace the Peep-MediaServer executable with its latest version. Privileges to write to the executable location are required.
 
 ## Docker image
 
 If you used the `1` tag or the `latest` tag, remove the image from cache and re-download it:
 
 ```sh
-docker rm bluenviron/mediamtx:1
+docker rm tarcisoamorim/peep-mediaserver:1
 docker restart id-of-mediamtx-container
 ```
 

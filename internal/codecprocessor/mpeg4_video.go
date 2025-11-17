@@ -9,8 +9,8 @@ import (
 	"github.com/bluenviron/gortsplib/v5/pkg/format/rtpfragmented"
 	"github.com/bluenviron/mediacommon/v2/pkg/codecs/mpeg4video"
 
-	"github.com/bluenviron/mediamtx/internal/logger"
-	"github.com/bluenviron/mediamtx/internal/unit"
+	"github.com/tarcisoamorim/peep-mediaserver/internal/logger"
+	"github.com/tarcisoamorim/peep-mediaserver/internal/unit"
 )
 
 // MPEG-4 video related parameters

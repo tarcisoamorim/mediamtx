@@ -6,8 +6,8 @@ import (
 
 	"github.com/bluenviron/gortsplib/v5/pkg/format"
 
-	"github.com/bluenviron/mediamtx/internal/logger"
-	"github.com/bluenviron/mediamtx/internal/unit"
+	"github.com/tarcisoamorim/peep-mediaserver/internal/logger"
+	"github.com/tarcisoamorim/peep-mediaserver/internal/unit"
 )
 
 func randUint32() (uint32, error) {

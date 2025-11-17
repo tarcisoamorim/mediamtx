@@ -65,7 +65,7 @@ func doSingle(version string, f string) error {
 		return err
 	}
 
-	res, err := http.Get("https://github.com/bluenviron/mediamtx-rpicamera/releases/download/" + version + "/" + f)
+	res, err := http.Get("https://github.com/tarcisoamorim/peep-mediaserver-rpicamera/releases/download/" + version + "/" + f)
 	if err != nil {
 		return err
 	}

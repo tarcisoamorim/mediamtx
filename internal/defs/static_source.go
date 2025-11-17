@@ -3,7 +3,7 @@ package defs
 import (
 	"context"
 
-	"github.com/bluenviron/mediamtx/internal/conf"
+	"github.com/tarcisoamorim/peep-mediaserver/internal/conf"
 )
 
 // StaticSourceRunParams is the set of params passed to Run().
