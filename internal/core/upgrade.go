@@ -24,8 +24,8 @@ import (
 
 const (
 	gitRepo     = "https://github.com/tarcisoamorim/peep-mediaserver"
-	downloadURL = "https://github.com/tarcisoamorim/peep-mediaserver/releases/download/%s/mediamtx_%s_%s_%s.%s"
-	executable  = "mediamtx"
+	downloadURL = "https://github.com/tarcisoamorim/peep-mediaserver/releases/download/%s/peep-mediaserver_%s_%s_%s.%s"
+	executable  = "peep-mediaserver"
 )
 
 var (
@@ -190,6 +190,6 @@ func upgrade() error {
 		return err
 	}
 
-	fmt.Printf("MediaMTX upgraded successfully from %v to %v.\n", "v"+current.String(), "v"+latest.String())
+	fmt.Printf("Peep-MediaServer atualizado com sucesso de %v para %v.\n", "v"+current.String(), "v"+latest.String())
 	return nil
 }
